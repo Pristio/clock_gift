@@ -1,0 +1,97 @@
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: #CCCCCC;
+    overflow-x: hidden;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    padding-left: 15px;
+    color: #00A0C6;
+}
+
+#indice{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: CALC(100vh - 300px);
+}
+
+#indice p{
+    display: table-cell;
+    height: CALC(100vh - 300px);
+    width: 100vw;
+    font-family: monospace;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 0;
+
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(to bottom, #000, #000 50%, #fff 50%, #fff 100%);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.2s ease-out;
+    white-space: nowrap;
+}
+.clock{
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: 300px;
+    width: 100vw;
+    border-bottom: 2px solid #282828;
+}
+
+div[class*=bande]{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #282828;
+    color: #CCCCCC;
+    border-top: 1px solid #1F1F1F;
+    border-bottom: 1px solid #1F1F1F;
+}
+
+div.bande1, div.bande3{
+    top: 80px;
+    font-weight: bold;
+    z-index: 3;
+}
+div.bande1 span, div.bande3 span{
+    font-size: 35px;
+    padding: 5px 20px;
+}
+
+div.bande2{
+    top: 155px;
+    z-index: 1;
+}
+div.bande2 span{
+    font-size: 25px;
+    padding: 5px 25px;
+}
+div.bande3 {
+    transform-origin: top left;
+    transform: rotate(-60deg);
+    z-index: 2;
+    padding-left: 5000px;
+    padding-right: 5000px;
+    top: 4489px;
+}
+div.bande3 span{
+    font-size: 30px;
+    transform: rotate(60deg) !important;
+}
