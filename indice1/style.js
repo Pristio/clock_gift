@@ -12,7 +12,9 @@ ready(function () {
         const seconds = date.getSeconds();
         const milliseconds = date.getMilliseconds();
 
-        const hourPosition = -74.75 * hour + ((-(74.75/60) * minute) -(74.75/60/60) * seconds) + (-(74.75/60/60/ 1000) * milliseconds);
+        console.log(hour)
+
+        const hourPosition = -75 * hour + ((-(75/60) * minute) -(75/60/60) * seconds) + (-(75/60/60/ 1000) * milliseconds);
         const minutePosition = -70 * minute + (-(70/60) * seconds) + (-(70/60/ 1000) * milliseconds);
         const millisecondsPosition = (-75 * seconds) + (-(75 / 1000) * milliseconds);
         document.querySelector(".bande1 span").style.marginLeft = hourPosition + "px";
