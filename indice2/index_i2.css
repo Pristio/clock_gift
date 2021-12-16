@@ -1,0 +1,81 @@
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: #CCCCCC;
+    overflow-x: hidden;
+}
+
+.page{
+    width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.clock{
+    perspective: 800px;
+    perspective-origin: 50% 100px;
+}
+
+h1{
+    color: #00A0C6;
+    margin: 0;
+ }
+
+#indice{
+    text-align: center;
+    font-size: 5vw;
+}
+
+#indice p{
+    margin: 0;
+}
+
+.cube{
+    position: relative;
+    width: 200px;
+    transform-style: preserve-3d;
+    transform: rotateY(20deg) rotateX(-30deg) translate(-50%, 0);
+    left: 50%;
+    top: 50px;
+    height: 350px;
+}
+
+.cube div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.left {
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+    background: yellow;
+}
+.top {
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top center;
+    background: gray;
+}
+
+.front {
+    transform: translateZ(100px);
+    background: white;
+}
+
+.top, .front, .left{
+    text-align: center;
+}
+
+.top > p, .front p, .left p {
+    margin: 15px;
+    font-size: 155px;
+}
+
+.top > p{
+    transform: rotatex(180deg);
+}

@@ -12,8 +12,6 @@ ready(function () {
         const seconds = date.getSeconds();
         const milliseconds = date.getMilliseconds();
 
-        console.log(hour)
-
         const hourPosition = -75 * hour + ((-(75/60) * minute) -(75/60/60) * seconds) + (-(75/60/60/ 1000) * milliseconds);
         const minutePosition = -70 * minute + (-(70/60) * seconds) + (-(70/60/ 1000) * milliseconds);
         const millisecondsPosition = (-75 * seconds) + (-(75 / 1000) * milliseconds);
