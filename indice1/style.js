@@ -5,7 +5,9 @@ ready(function () {
 
     function updateClock(){
         const date = new Date();
-        const hour = date.getHours();
+        date.set
+        date.toLocaleString('fr-FR', { timeZone: 'Europe/Paris' });
+        let hour = date.getHours()-1;
         const minute = date.getMinutes();
         const seconds = date.getSeconds();
         const milliseconds = date.getMilliseconds();

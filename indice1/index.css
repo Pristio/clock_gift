@@ -95,3 +95,32 @@ div.bande3 span{
     font-size: 30px;
     transform: rotate(60deg) !important;
 }
+
+div.bande1:before{
+    content: "";
+    position: absolute;
+    width: 74.75px;
+    height: 52px;
+    border: 5px solid #65583D;
+    top: -6px;
+    left: CALC(50vw - 135px);;
+}
+
+div.bande2:before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    border: 5px solid #65583D;
+    top: -6px;
+    left: CALC(50vw + 25px);
+}
+
+div.bande3:before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    border: 5px solid #65583D;
+    top: -6px;
+}
