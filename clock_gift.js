@@ -4,7 +4,7 @@ let links_indices = [
     "2021_12_18_nf2phzpit.html",
 ];
 
-const indexUrl = links_indices.indexOf(document.location.toString().split("/").slice(4,5)[0]);
+const indexUrl = document.location.toString().split("/")[document.location.toString().split("/").length-1];
 const indexAvant = indexUrl-1;
 const indexApres = indexUrl+1;
 
@@ -14,7 +14,7 @@ left_hist.style.width = "50vw";
 left_hist.style.height = "100vh";
 left_hist.style.top = "0";
 left_hist.style.left = "0";
-left_hist.addEventListener("click", function (){
+left_hist.addEventListener("dblclick", function (){
     if(typeof links_indices[indexAvant] !== "undefined") {
         document.location.href = "../indice" + (indexAvant + 1) + "/" + links_indices[indexAvant];
     }
@@ -27,7 +27,7 @@ right_hist.style.width = "50vw";
 right_hist.style.height = "100vh";
 right_hist.style.top = "0";
 right_hist.style.right = "0";
-right_hist.addEventListener("click", function (){
+right_hist.addEventListener("dblclick", function (){
     if(typeof links_indices[indexApres] !== "undefined") {
         document.location.href = "../indice" + (indexApres + 1) + "/" + links_indices[indexApres];
     }
