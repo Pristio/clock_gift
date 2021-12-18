@@ -1,0 +1,51 @@
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    overflow-x: hidden;
+}
+
+.page{
+    width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    color: #00A0C6;
+    margin: 0;
+ }
+
+#indice{
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 5vw;
+}
+
+#indice p{
+    margin: 0;
+}
+
+.clock > div{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.clock .point{
+    border-radius: 50%;
+    background: black;
+    border: 1px solid darkgreen;
+    min-width: 20px;
+    min-height: 20px;
+    margin-left: 20px;
+}
+
+.clock .point.active{
+    background: greenyellow;
+}
