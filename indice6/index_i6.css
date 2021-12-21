@@ -1,0 +1,110 @@
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    overflow-x: hidden;
+}
+
+.page{
+    width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    color: #00A0C6;
+    margin: 0;
+ }
+
+#indice{
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 5vw;
+}
+
+#indice p{
+    margin: 0;
+}
+
+.clock {
+    position: relative;
+    border-radius: 50%;
+    background: #fff url(clock.svg) no-repeat center;
+    background-size: 18em;
+    height: 20em;
+    width: 20em;
+    margin: 5px;
+}
+
+.clock.simple:after {
+    background: #000;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: 5%;
+    z-index: 10;
+}
+
+.minutes-container, .hours-container, .seconds-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hours {
+    background: #000;
+    height: 20%;
+    left: 48.75%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
+}
+
+.minutes {
+    background: #000;
+    height: 40%;
+    left: 49%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+    width: 2%;
+}
+
+.seconds {
+    background: #000;
+    height: 45%;
+    left: 49.5%;
+    position: absolute;
+    top: 14%;
+    transform-origin: 50% 80%;
+    width: 1%;
+    z-index: 8;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.hours-container {
+    animation: rotate 43200s infinite linear;
+}
+.minutes-container {
+    animation: rotate 3600s infinite linear;
+}
+.seconds-container {
+    animation: rotate 60s infinite linear;
+}
