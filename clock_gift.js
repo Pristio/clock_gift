@@ -2,7 +2,8 @@ let links_indices = [
     "2021_12_16-gh6n483y2.html",
     "2021_12_17_a1l5b3o13.html",
     "2021_12_18_nf2phzpit.html",
-    "2021_12_19_sf2ioi7jy.html"
+    "2021_12_19_sf2ioi7jy.html",
+    "2021_12_22_123456789.html"
 ];
 
 const indexUrl = document.location.toString().split("/")[document.location.toString().split("/").length-1];
